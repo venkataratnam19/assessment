@@ -1,0 +1,14 @@
+# Default values
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+replicaCount: 1
+
+image:
+  repository: "k8stest3.azurecr.io/spring-boot-java"
+  tag: v1
+  pullPolicy: IfNotPresent
+
+service:
+  type: LoadBalancer
+  port: 80
